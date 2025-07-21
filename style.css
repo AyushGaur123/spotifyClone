@@ -1,0 +1,57 @@
+/* .left{
+    width: 45vw;
+    height: 100vh;
+    background-color: red;
+}
+.right{
+    width: 55vw;
+    height: 100vh;
+    background: pink;
+} */
+ .home{
+    height: 30px;
+    width: 30px;
+ }
+ .nav{
+    display: flex;
+ }
+ .home1{
+    border-radius: 100%;
+    border: none;
+ }
+ .search{
+    width: 21px;
+ }
+ .search_bar{
+    margin-top: 3px;
+    margin-right: 13px;
+    width: 250px;
+    height: 23px;
+ }
+ .search1{
+    display: flex;
+    width: 350px;
+    background-color: rgb(109, 109, 109);
+    border-radius: 15px;
+ }
+ .search2{
+    display: flex;
+    width: 500px;
+
+ }
+ .click{
+    margin-top: 8px;
+    margin-left: 15px;
+ }
+ .home3{
+    margin-top: 8px;
+    height: 19px;
+    width: 25px;
+ }
+ .click3{
+    margin-top: 8px;
+    /* margin-left: px; */
+ }
+ .search3{
+    display: flex;
+ }
