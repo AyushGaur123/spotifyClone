@@ -1,57 +1,360 @@
-/* .left{
-    width: 45vw;
-    height: 100vh;
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
-.right{
-    width: 55vw;
-    height: 100vh;
-    background: pink;
-} */
- .home{
-    height: 30px;
+
+.body {
+    background-color: black;
+    
+}
+
+.home {
+    height: 24px;
     width: 30px;
- }
- .nav{
+    filter: invert(1);
+
+}
+
+.nav {
     display: flex;
- }
- .home1{
+    justify-content: space-between;
+    background-color: black;
+    /* height: 40px; */
+    padding: 10px;
+
+}
+
+.icon {
+    margin-left: 12px;
+    filter: invert(1);
+}
+
+.home1 {
     border-radius: 100%;
+    padding: 0 5px;
     border: none;
- }
- .search{
+    background-color: rgb(39 38 38);
+
+}
+
+.search {
     width: 21px;
- }
- .search_bar{
-    margin-top: 3px;
+}
+
+.bar {
+    padding-top: 0px;
+    padding-left: 9px;
+}
+.bar1{
+    /* padding-left: 138px; */
+    /* position: absolute; */
+    /* right: 10px; */
+    filter: invert(1);
+    margin-right: 10px;
+}
+
+.search_bar {
+    /* margin-top: 7px;
     margin-right: 13px;
     width: 250px;
-    height: 23px;
- }
- .search1{
+    height: 23px; */
+    background-color: rgb(39 38 38);
+    border: none;
+    color: rgb(207, 204, 204);
+    padding: 2px;
+    /* width: 355px; */
+    
+
+}
+.search_div{
+    padding: 3px 61px 10px 10px;
+    width: 286px;
+}
+
+.search_bar::placeholder {
+    color: rgb(147, 147, 147);
+    
+ 
+}
+
+.search1 {
     display: flex;
-    width: 350px;
-    background-color: rgb(109, 109, 109);
-    border-radius: 15px;
- }
- .search2{
+   padding: 8px 10px 0 0 ;
+    background-color: rgb(39 38 38);
+    border-radius: 35px;
+    margin-left: 14px;
+    /* position: relative; */
+}
+
+.search2 {
     display: flex;
     width: 500px;
+   
 
- }
- .click{
-    margin-top: 8px;
-    margin-left: 15px;
- }
- .home3{
+}
+.icon1{
+    display: flex;
+ gap: 24px;
+}
+
+.click {
+    
+   
+    color: rgb(207, 204, 204);
+    font-weight: 900;
+}
+.click:hover{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.home3 {
     margin-top: 8px;
     height: 19px;
     width: 25px;
- }
- .click3{
+    filter: invert(1);
+
+}
+
+.click3 {
     margin-top: 8px;
+    color: rgb(207, 204, 204);
+    font-weight: 900;
+
     /* margin-left: px; */
- }
- .search3{
+}
+
+.search3 {
     display: flex;
- }
+}
+
+.logIn {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 0 20px;
+}
+
+.info {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.left-content {
+    width: 30vw;
+     
+    
+    background-color: rgb(19, 19, 19);
+    margin: 9px 4.5px 9px 9px;
+    border-radius: 10px;
+}
+
+.header {
+    color: white;
+    font-size: 20px;
+    margin-top: 24px;
+    padding-left: 20px;
+    font-family: Arial;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus {
+    height: 19px;
+    width: 25px;
+    margin: 27px 20px 0 0;
+    filter: invert(1);
+   
+}
+
+.box{
+    margin: 51px 9px 10px 8px;
+    background-color: rgb(26, 26, 26);
+    height: 120px;
+    border-radius: 12px;
+    padding-top: 20px;
+    
+}
+.box1{
+    margin-top: 25px;
+
+}
+
+.Create{
+    color: white;
+    margin: 10px 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    
+}
+
+.more{
+    font-weight: bolder;
+    font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+
+}
+.button_create{
+    margin:10px 19px;
+    border-radius: 39px;
+    color: black;
+    background-color: white;
+    font-family: Arial;
+    font-weight: 900;
+    padding: 6px 14px;
+}
+.footer{
+    display: flex;
+   margin: 50px 0 11px 0;
+    flex-wrap: wrap;
+
+}
+.footerContent{
+    padding: 16px 10px 0 15px;
+    white-space: nowrap;
+
+}
+.footerContent a{
+    text-decoration: none;
+    color: rgb(128, 127, 127);
+    font-size: 12px;
+}
+.cookie{
+    padding-left: 14px;
+    font-size: 14px;
+    margin-top: 22px;
+}
+.left-content > button{
+    background-color: black;
+    border: 2px solid grey;
+    display: flex;
+    gap: 11px;
+    padding:  7px 11px;
+    border-radius: 20px;
+    margin: 30px 0 34px 22px;
+}
+.left-content > button:hover{
+    cursor: pointer;    
+}
+
+.left-content > button img{
+    filter: invert(1);
+}
+
+.right-content {
+    width: 70vw;
+    height: 646px;
+    background-color: rgb(32, 31, 31);
+    margin: 9px 9px 9px 4.5px;
+    border-radius: 10px;
+    position: relative;
+}
+.top-header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 39px;
+}
+.sho-all{
+    margin-top: 18px;
+}
+.big-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 31px;
+       max-height: 526px;
+    overflow: scroll;
+    
+}
+
+.card{
+   
+    width: 172px;
+    border-radius: 10px;
+    background-color: rgb(32, 31, 31);
+    padding: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.card:hover{
+    background-color: rgb(26, 26, 26);
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.play{
+    position: absolute;
+    top: 133px;
+    right: 22px;
+    opacity: 1;
+    transition: all 1s ease-out;
+    
+}
+.circle{
+        cx: 50;
+    cy: 50;
+    r: 50;
+    fill: #1Ed760;
+
+}
+.card h1{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.card a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.seek{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 38px;
+    width: 98%;
+    height: 2px;
+    background-color: black;
+    /* border: 2px solid black; */
+    /* z-index: 2; */
+}
+
+.dot{
+    background-color: rgb(23, 24, 23);
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: relative;
+    left: 0%;
+    transition: left 1s;
+   
+}
+
+.playbar{
+    position: absolute;
+    bottom: 3px;
+    border-radius: 20px;
+    background-color: white;
+    width: 98%;
+    padding: 8px;
+    display: flex;
+   justify-content: center;
+   z-index: 1;
+}
+
+
+
+
+
+
