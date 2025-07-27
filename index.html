@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify-Web Player: Music for Everyone </title>
+    <link rel="icon" type="image/svg" href="Images/spotify.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="playbar.css">
 
 </head>
 
@@ -15,16 +17,16 @@
     <div class="body">
         <div class="nav">
             <div class="search2">
-                <div class="icon1"><img class="icon " src="logo.svg" alt="">
+                <div class="icon1"><img class="icon " src="Images/logo.svg" alt="">
 
-                    <button class="home1"><img class="home" src="home.svg" alt=""></button>
+                    <button class="home1"><img class="home" src="Images/home.svg" alt=""></button>
                 </div>
                 <div class="search1">
-                    <img class="home bar" src="search.svg " alt="">
+                    <img class="home bar" src="Images/search.svg " alt="">
                     <div class="search_div"><input class="search_bar" placeholder="What do you want to play"
                             type="text"></div>
 
-                    <img class="home bar bar1" src="box.svg" xlink:href="https://svgur.com/i/AFM.svg" alt="">
+                    <img class="home bar bar1" src="Images/box.svg" xlink:href="https://svgur.com/i/AFM.svg" alt="">
                 </div>
 
             </div>
@@ -35,7 +37,7 @@
                 <a class="click">Download</a>
                 <a class="click"><b>|</b></a>
                 <div class="search3">
-                    <img class="home3" src="install.svg" alt="">
+                    <img class="home3" src="Images/install.svg" alt="">
                     <a class="click3">Install App</a>
                 </div>
                 <a class="click">Sign Up</a>
@@ -46,27 +48,27 @@
             <div class="left-content">
                 <div class="header1">
                     <div class="header">Your Library</div>
-                    <img class="plus" src="plus.svg" alt="">
+                    <img class="plus" src="Images/plus.svg" alt="">
                 </div>
 
-                <div class="songlist">
+                <div class="songlist hide ">
                     <ul>
-                        
+
                     </ul>
                 </div>
 
-                <div class="box hide ">
+                <div class="box  ">
                     <p class="Create more">Create your first playlist</p>
                     <p class="Create">It's easy ,we'll help you</p>
-                    <button class="button_create">Create Playlist</button>
+                    <button class="button_create pointer">Create Playlist</button>
 
                 </div>
-                <div class="box hide box1">
+                <div class="box  box1">
                     <p class="Create more">Let's find some products to follow</p>
                     <p class="Create">We will keep you updated on new episodes</p>
-                    <button class="button_create">Browse Prodcast</button>
+                    <button class="button_create pointer">Browse Prodcast</button>
                 </div>
-                <div class="footer hide">
+                <div class="footer ">
                     <div class="footerContent"><a href="">Legal</a></div>
                     <div class="footerContent"><a href="">Saftey & Privacy Center</a></div>
                     <div class="footerContent"><a href="">Privacy Policies</a></div>
@@ -74,62 +76,51 @@
                     <div class="footerContent"><a href="">About Ads</a></div>
                     <div class="footerContent"><a href="">Accessibility</a></div>
                 </div>
-                <div class="cookie hide">Cookies</div>
-                <!-- <button >
-                    <img src="internet.svg" alt="" height="17"><p>English</p></button> -->
+                <div class="cookie ">Cookies</div>
+                <button >
+                    <img src="Images/internet.svg" alt="" height="17"><p>English</p></button>
 
             </div>
             <div class="right-content">
-                <div class="top-header">
-                    <a>
-                        <h1>Spotify Playlist</h1>
-                    </a>
-                    <a class="sho-all">Show all</a>
-                </div>
-                <div class="big-box">
 
-
-                    <div class="card">
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
-                                <circle class="circle"></circle>
-                                <path d="M40 30 Q40 25, 45 28 L70 48 Q75 50, 70 52 L45 72 Q40 75, 40 70 Z"
-                                    fill="#000000" />
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e02a7e251b543c77a6ed356dfbe" alt="">
-                        <h1>Saiyaara (from "Saiyaara")</h1>
-                        <a href="">Tanishk bagachi,</a>
-                        <a href="">Faheem abdulla,</a>
-                        <a href="">Arshlan nizami,</a>
-
+                <div class="boxall">
+                    <div class="top-header">
+                        <a>
+                            <h1>Spotify Playlist</h1>
+                        </a>
+                        <a class="sho-all">Show all</a>
                     </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
-                                <circle class="circle"></circle>
-                                <path d="M40 30 Q40 25, 45 28 L70 48 Q75 50, 70 52 L45 72 Q40 75, 40 70 Z"
-                                    fill="#000000" />
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e02a7e251b543c77a6ed356dfbe" alt="">
-                        <h1>Saiyaara (from "Saiyaara")</h1>
-                        <a href="">Tanishk bagachi,</a>
-                        <a href="">Faheem abdulla,</a>
-                        <a href="">Arshlan nizami,</a>
-
+                    <div class="big_box">
                     </div>
-
+                    <div class="artist">
+                        <h1>Top Artist </h1>
+                    </div>
+                    <div class="bigbox2"></div>
+                    
 
                 </div>
                 <div class="playbar">
                     <div class="seek">
                         <div class="dot"></div>
                     </div>
-                    <div class="playbutton">
-                        <img src="previous.svg" alt="">
-                        <img src="play.svg" alt="">
-                        <img src="next.svg" alt="">
+                    <div class="other">
+                        <div class="title"></div>
+                        <div class="playbutton pointer">
+                            <img id="prevSong" src="Images/previous.svg" alt="">
+                            <img id="playSong" src="Images/play.svg" alt="">
+                            <img id="nextSong" src="Images/next.svg" alt="">
+                        </div>
+                        <div class="volume">
+                            <div class="duration">
+                            </div>
+                            <div class="mute">
+                                <img src="Images/volume.svg" alt="">
+                            </div>
+
+                            <div class="range">
+                                <input class="inputvol" type="range" name="volume">
+                            </div>
+                        </div>
                     </div>
 
 
@@ -141,8 +132,7 @@
         </div>
     </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script5.js"></script>
 </body>
 
 </html>

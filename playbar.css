@@ -1,0 +1,108 @@
+.seek {
+    display: flex;
+    align-items: center;
+    bottom: 38px;
+    width: 98%;
+    height: 4px;
+    border-radius: 295px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dot {
+    background-color: rgb(23, 24, 23);
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: relative;
+    left: 0%;
+    transition: left 0.5s;
+
+}
+
+.other {
+    display: flex;
+}
+
+.playbar {
+    position: absolute;
+    bottom: -13px;
+    background-color: rgb(63 59 64);
+    width: 98%;
+    padding: 11px;
+    justify-content: space-between;
+}
+
+.playbutton {
+    height: 24px;
+    width: 82px;
+}
+
+.title {
+    padding: 7px 2px 0;
+    font-size: 13px;
+    width: 346px;
+    overflow-y: clip;
+    height: 16px;
+}
+
+#playSong {
+    width: 20px;
+}
+
+#prevSong,
+#nextSong {
+    width: 19px;
+}
+
+.playbutton {
+    margin-top: 4px;
+    filter: invert(1);
+}
+
+.volume {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    width: 344px;
+    padding-right: 32px;
+    gap: 9px;
+}
+
+.duration {
+    font-size: 13px;
+    bottom: 2px;
+    right: 153px;
+}
+
+.range {
+    padding-right: 5px;
+    padding-bottom: 8px;
+    bottom: -3px;
+}
+
+.range input {
+    cursor: pointer;
+}
+
+.volume img {
+    width: 24px;
+    filter: invert(1);
+}
+
+.volumeSeek {
+    display: flex;
+    align-items: center;
+}
+
+.inputvol {
+    width: 80px;
+    height: 4px;
+}
+
+.mute {
+    bottom: -5px;
+    padding-right: 10px;
+    right: 113px;
+}

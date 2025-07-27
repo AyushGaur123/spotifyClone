@@ -1,14 +1,21 @@
+:root {
+    --a: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-
+    scrollbar-width: none;
+    
 }
 
 .body {
     background-color: black;
-    
+    height: 743px;
+    /* position: absolute; #added by me */
+
 }
 
 .home {
@@ -16,7 +23,7 @@
     width: 30px;
     filter: invert(1);
 
-}
+} 
 
 .nav {
     display: flex;
@@ -48,7 +55,8 @@
     padding-top: 0px;
     padding-left: 9px;
 }
-.bar1{
+
+.bar1 {
     /* padding-left: 138px; */
     /* position: absolute; */
     /* right: 10px; */
@@ -66,23 +74,24 @@
     color: rgb(207, 204, 204);
     padding: 2px;
     /* width: 355px; */
-    
+
 
 }
-.search_div{
+
+.search_div {
     padding: 3px 61px 10px 10px;
     width: 286px;
 }
 
 .search_bar::placeholder {
     color: rgb(147, 147, 147);
-    
- 
+
+
 }
 
 .search1 {
     display: flex;
-   padding: 8px 10px 0 0 ;
+    padding: 8px 10px 0 0;
     background-color: rgb(39 38 38);
     border-radius: 35px;
     margin-left: 14px;
@@ -92,22 +101,21 @@
 .search2 {
     display: flex;
     width: 500px;
-   
+
 
 }
-.icon1{
+
+.icon1 {
     display: flex;
- gap: 24px;
+    gap: 24px;
 }
 
 .click {
-    
-   
     color: rgb(207, 204, 204);
     font-weight: 900;
 }
-.click:hover{
-    font-size: 17px;
+
+.click:hover {
     cursor: pointer;
 }
 
@@ -135,7 +143,7 @@
     border-radius: 20px;
     background-color: white;
     color: black;
-    padding: 0 20px;
+    padding: 9px 20px;
 }
 
 .info {
@@ -146,12 +154,11 @@
 
 .content {
     display: flex;
+    /* position: relative; */
 }
 
 .left-content {
     width: 30vw;
-     
-    
     background-color: rgb(19, 19, 19);
     margin: 9px 4.5px 9px 9px;
     border-radius: 10px;
@@ -175,38 +182,40 @@
     width: 25px;
     margin: 27px 20px 0 0;
     filter: invert(1);
-   
+
 }
 
-.box{
+.box {
     margin: 51px 9px 10px 8px;
     background-color: rgb(26, 26, 26);
     height: 120px;
     border-radius: 12px;
     padding-top: 20px;
-    
+
 }
-.box1{
+
+.box1 {
     margin-top: 25px;
 
 }
 
-.Create{
+.Create {
     color: white;
     margin: 10px 19px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    
+
 }
 
-.more{
+.more {
     font-weight: bolder;
     font-size: 15px;
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-.button_create{
-    margin:10px 19px;
+
+.button_create {
+    margin: 10px 19px;
     border-radius: 39px;
     color: black;
     background-color: white;
@@ -214,147 +223,194 @@
     font-weight: 900;
     padding: 6px 14px;
 }
-.footer{
+
+.footer {
     display: flex;
-   margin: 50px 0 11px 0;
+    margin: 50px 0 11px 0;
     flex-wrap: wrap;
 
 }
-.footerContent{
-    padding: 16px 10px 0 15px;
+
+.footerContent {
+    padding: 3px 13px 0 16px;
     white-space: nowrap;
 
 }
-.footerContent a{
+
+.footerContent a {
     text-decoration: none;
     color: rgb(128, 127, 127);
     font-size: 12px;
 }
-.cookie{
+
+.cookie {
     padding-left: 14px;
     font-size: 14px;
-    margin-top: 22px;
+    margin-top: 16px;
 }
-.left-content > button{
+
+.left-content>button {
     background-color: black;
     border: 2px solid grey;
     display: flex;
     gap: 11px;
-    padding:  7px 11px;
+    padding: 5px 8px;
     border-radius: 20px;
-    margin: 30px 0 34px 22px;
-}
-.left-content > button:hover{
-    cursor: pointer;    
+    margin: 15px 0 34px 22px;
 }
 
-.left-content > button img{
+.left-content>button:hover {
+    cursor: pointer;
+}
+
+.left-content>button img {
     filter: invert(1);
 }
 
 .right-content {
-    width: 70vw;
-    height: 646px;
+    width: 68vw;
+    height: 658px;
     background-color: rgb(32, 31, 31);
     margin: 9px 9px 9px 4.5px;
     border-radius: 10px;
     position: relative;
 }
-.top-header{
+
+.other{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header {
+    font-size: 14px;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px 39px;
 }
-.sho-all{
-    margin-top: 18px;
-}
-.big-box{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 31px;
-       max-height: 526px;
-    overflow: scroll;
-    
+
+.boxall {
+    /* max-height: 526px; */
+    height: 614px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0px 20px;
+    /* position: relative; */
 }
 
-.card{
+.sho-all {
+    margin-top: 8px;
+}
+
+.big_box {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    /* padding: 0 31px; */
+    height: 285px;
+
+
+}
+.big_box > * {
+  flex-shrink: 0;
+
+}
+
+.artist {
+    font-size: 14px;
+    padding: 20px 39px;
+}
+
+.bigbox2 {
+    display: flex;
+    max-height: 200px;
+    overflow-x: scroll;
+        padding: 34px 0;
    
+    gap: 23px;
+    /* margin-left: 36px; */
+     max-height: 100%; /* up to parent */
+  overflow-y: hidden;
+}
+.bigbox2 > * {
+  flex-shrink: 0;
+
+}
+
+.card2 {
+    height: 169px;
+    width: 169px;
+}
+
+.card2 img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 100px;
+}
+
+.card2 p {
+font-size: 17px;
+}
+
+.cardelem {
+    width: 172px;
+}
+
+.card {
+
     width: 172px;
     border-radius: 10px;
     background-color: rgb(32, 31, 31);
     padding: 10px;
     padding-bottom: 5px;
     position: relative;
+    transition: all .7s;
 }
-.card:hover{
+
+.card:hover {
     background-color: rgb(26, 26, 26);
+
+    --a: 1;
 }
-.card img{
+
+.card img {
     width: 100%;
     object-fit: contain;
     border-radius: 10px;
 }
-.play{
+
+.play {
     position: absolute;
     top: 133px;
     right: 22px;
-    opacity: 1;
+    opacity: var(--a);
     transition: all 1s ease-out;
-    
+    cursor: pointer;
 }
-.circle{
-        cx: 50;
+
+.card2 {
+    height: 169px;
+}
+
+.circle {
+    cx: 50;
     cy: 50;
     r: 50;
     fill: #1Ed760;
 
 }
-.card h1{
-    font-size: 20px;
+
+.card h1 {
+    font-size: 16px;
     margin-bottom: 6px;
 }
-.card a{
+.card p {
+    font-size: 14px;
+}
+
+.card a {
     text-decoration: none;
     font-size: 12px;
 }
-.seek{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 38px;
-    width: 98%;
-    height: 2px;
-    background-color: black;
-    /* border: 2px solid black; */
-    /* z-index: 2; */
-}
-
-.dot{
-    background-color: rgb(23, 24, 23);
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    position: relative;
-    left: 0%;
-    transition: left 1s;
-   
-}
-
-.playbar{
-    position: absolute;
-    bottom: 3px;
-    border-radius: 20px;
-    background-color: white;
-    width: 98%;
-    padding: 8px;
-    display: flex;
-   justify-content: center;
-   z-index: 1;
-}
-
-
-
-
-
-
