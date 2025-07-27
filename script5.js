@@ -85,7 +85,7 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/songs") ) {                     // && !e.href.includes(".htaccess")
+        if (e.href.includes("/songs") ) {                     
             let folder = e.href.split("/").slice(-2)[0]
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
@@ -139,7 +139,7 @@ async function displayAlbums2() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/songs1") ) {                        //&& !e.href.includes(".htaccess")
+        if (e.href.includes("/songs1") ) {                      
             let folder = e.href.split("/").slice(-2)[0]
             let a = await fetch(`/songs1/${folder}/info.json`)
             let response = await a.json();
