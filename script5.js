@@ -13,7 +13,7 @@ function secondsToMMSS(totalSeconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/index.html/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -25,7 +25,7 @@ async function getSongs(folder) {
        
         
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`/${folder}/`)[1])
+            songs.push(element.href.split(`http://127.0.0.1:3000/${folder}/`)[1])
               
         }
     }
@@ -58,7 +58,7 @@ async function getSongs(folder) {
 }
 
 const playMusic = (music, pause = false) => {
-    currentSong.src = `/${currFolder}/` + music
+    currentSong.src = `http://127.0.0.1:3000/${currFolder}/` + music
     if (!pause) {
         currentSong.play()
         playSong.src = "Images/pause.svg"
@@ -70,7 +70,7 @@ const playMusic = (music, pause = false) => {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`http://127.0.0.1:3000/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -87,7 +87,7 @@ async function displayAlbums() {
         const e = array[index];
         if (e.href.includes("/songs") ) {                     // && !e.href.includes(".htaccess")
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`/songs/${folder}/info.json`)
+            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`)
             let response = await a.json();
             big_box.innerHTML = big_box.innerHTML + `  <div data-folder="${folder}" class="card">
                         <div class="play">
@@ -97,7 +97,7 @@ async function displayAlbums() {
                                     fill="#000000" />
                             </svg>
                         </div>
-                        <img src="/songs/${folder}/cover.jpeg" alt="">
+                        <img src="http://127.0.0.1:3000/songs/${folder}/cover.jpeg" alt="">
                         <h1>${response.title}</h1>
                         <p>${response.description}</p>
                       
@@ -124,7 +124,7 @@ async function displayAlbums() {
 
 }
 async function displayAlbums2() {
-    let a = await fetch(`/songs1/`)
+    let a = await fetch(`http://127.0.0.1:3000/songs1/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -139,13 +139,13 @@ async function displayAlbums2() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/songs1") ) {                        //&& !e.href.includes(".htaccess")
+        if (e.href.includes("http://127.0.0.1:3000/songs1") ) {                        //&& !e.href.includes(".htaccess")
             let folder = e.href.split("/").slice(-2)[0]
-            let a = await fetch(`/songs1/${folder}/info.json`)
+            let a = await fetch(`http://127.0.0.1:3000/songs1/${folder}/info.json`)
             let response = await a.json();
 
             bigbox2.innerHTML = bigbox2.innerHTML + `<div data-folder="${folder}" class="card2"> 
-                        <img src="/songs1/${folder}/cover.jpeg" >
+                        <img src="http://127.0.0.1:3000/songs1/${folder}/cover.jpeg" >
                         <p>${response.title}</p>
                       
                         </div>`;
