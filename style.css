@@ -57,24 +57,17 @@
 }
 
 .bar1 {
-    /* padding-left: 138px; */
-    /* position: absolute; */
-    /* right: 10px; */
+
     filter: invert(1);
     margin-right: 10px;
 }
 
 .search_bar {
-    /* margin-top: 7px;
-    margin-right: 13px;
-    width: 250px;
-    height: 23px; */
+ 
     background-color: rgb(39 38 38);
     border: none;
     color: rgb(207, 204, 204);
     padding: 2px;
-    /* width: 355px; */
-
 
 }
 
@@ -95,7 +88,7 @@
     background-color: rgb(39 38 38);
     border-radius: 35px;
     margin-left: 14px;
-    /* position: relative; */
+   
 }
 
 .search2 {
@@ -132,7 +125,6 @@
     color: rgb(207, 204, 204);
     font-weight: 900;
 
-    /* margin-left: px; */
 }
 
 .search3 {
@@ -154,7 +146,6 @@
 
 .content {
     display: flex;
-    /* position: relative; */
 }
 
 .left-content {
@@ -290,13 +281,11 @@
 }
 
 .boxall {
-    /* max-height: 526px; */
     height: 614px;
     overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding: 0px 20px;
-    /* position: relative; */
 }
 
 .sho-all {
@@ -307,8 +296,6 @@
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-
-    /* padding: 0 31px; */
     height: 285px;
 
 
@@ -327,13 +314,12 @@
     display: flex;
     max-height: 200px;
     overflow-x: scroll;
-        padding: 34px 0;
-   
+    padding: 34px 0;  
     gap: 23px;
-    /* margin-left: 36px; */
-     max-height: 100%; /* up to parent */
-  overflow-y: hidden;
+    max-height: 100%; 
+    overflow-y: hidden;
 }
+
 .bigbox2 > * {
   flex-shrink: 0;
 

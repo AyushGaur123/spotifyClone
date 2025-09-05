@@ -13,8 +13,10 @@ function secondsToMMSS(totalSeconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/${folder}/`)
+    let a =  await fetch(`/${folder}/`)
     let response = await a.text();
+    console.log(response)
+    
     let div = document.createElement("div")
     div.innerHTML = response;
     let anchors = div.getElementsByTagName("a")
@@ -85,7 +87,7 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/songs") ) {                     
+        if (e.href.includes("/songs") ) {                    
             let folder = e.href.split("/").slice(-2)[0]
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
